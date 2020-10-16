@@ -19,7 +19,7 @@ const OrderList = ({ userName }) => {
     }
 
     function getData() {
-        fetch('https://rocky-chamber-63741.herokuapp.com/orders')
+        fetch('https://rocky-chamber-63741.herokuapp.com/allOrders')
             .then(res => res.json())
             .then(data => setTableData(data))
     }
