@@ -34,15 +34,6 @@ const Login = () => {
         });
     }
 
-    // const storeAuthToken = () => {
-    //     firebase.auth().currentUser.getIdToken(/* forceRefresh */ true)
-    //         .then(function (idToken) {
-    //             sessionStorage.setItem('token', idToken);
-    //         })
-    //         .catch(function (error) {
-    //             // Handle error
-    //         });
-    // }
     return (
         <div className='d-flex flex-column align-items-center justify-content-center mt-5'>
             <Link to='/'>
