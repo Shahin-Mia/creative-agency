@@ -9,7 +9,7 @@ const Navbar = () => {
         serLoggedInUser({})
     }
     return (
-        <nav className="container navbar navbar-expand-lg navbar-light">
+        <nav className="container navbar navbar-expand-lg navbar-light d-flex align-items-center">
             <Link className="navbar-brand" to="/">
                 <img style={{ height: 47 }} src={logo} className="img-fluid" alt="" />
             </Link>
@@ -30,12 +30,19 @@ const Navbar = () => {
                     <li className="nav-item ml-2 px-2">
                         <a className="nav-link" href="#team">Contact Us</a>
                     </li>
-                    {loggedInUser.email ? <li className="nav-item ml-2 px-2">
-                        <button onClick={handleClick} className="btn btn-dark px-5 py-2">Log out</button>
-                    </li>
+                    {
+                        loggedInUser.email && <li className="nav-item ml-2 px-2">
+                            <Link to="/dashboard/1" className="nav-link">Dashboard</Link>
+                        </li>
+                    }
+                    {loggedInUser.email ?
+                        <li className="nav-item ml-2 px-2">
+                            <button onClick={handleClick} className="btn btn-dark px-5 py-2">Log out</button>
+                        </li>
                         : <li className="nav-item ml-2 px-2">
                             <Link to="/dashboard/1" className="btn btn-dark px-5 py-2">Login</Link>
-                        </li>}
+                        </li>
+                    }
                 </ul>
             </div>
         </nav>
