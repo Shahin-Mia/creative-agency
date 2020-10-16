@@ -16,7 +16,7 @@ const AddServices = ({ userName }) => {
         formData.append('icon', files[0])
         formData.append('title', title)
         formData.append('desc', desc)
-        fetch('http://localhost:5000/addServices', {
+        fetch('https://rocky-chamber-63741.herokuapp.com/addServices', {
             method: 'POST',
             body: formData
         })

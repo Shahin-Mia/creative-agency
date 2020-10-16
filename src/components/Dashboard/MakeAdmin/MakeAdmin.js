@@ -5,7 +5,7 @@ const MakeAdmin = ({ userName }) => {
     const { register, handleSubmit } = useForm();
     const [isAdded, setIsAdded] = useState(false)
     const handleMakeAdmin = data => {
-        fetch('http://localhost:5000/admin', {
+        fetch('https://rocky-chamber-63741.herokuapp.com/admin', {
             method: 'POST',
             headers: { 'Content-type': 'application/json' },
             body: JSON.stringify(data)

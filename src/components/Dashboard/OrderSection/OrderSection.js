@@ -13,7 +13,7 @@ const OrderSection = ({ user }) => {
     const { register, handleSubmit } = useForm();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/serviceItem/${id}`)
+        fetch(`https://rocky-chamber-63741.herokuapp.com/serviceItem/${id}`)
             .then(res => res.json())
             .then(result => setItem(result))
         // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -37,7 +37,7 @@ const OrderSection = ({ user }) => {
         formData.append('price', price)
         formData.append('status', status)
         formData.append('details', details)
-        fetch('http://localhost:5000/addOrders', {
+        fetch('https://rocky-chamber-63741.herokuapp.com/addOrders', {
             method: 'POST',
             body: formData
         })

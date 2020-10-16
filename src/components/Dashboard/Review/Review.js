@@ -19,7 +19,7 @@ const Review = ({ userName }) => {
         formData.append('name', name)
         formData.append('designation', designation)
         formData.append('desc', desc)
-        fetch('http://localhost:5000/addReviews', {
+        fetch('https://rocky-chamber-63741.herokuapp.com/addReviews', {
             method: 'POST',
             body: formData
         })

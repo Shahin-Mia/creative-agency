@@ -7,7 +7,7 @@ const OrderList = ({ userName }) => {
     useEffect(getData, [])
 
     const handleChange = (e, id) => {
-        fetch(`http://localhost:5000/update/${id}`, {
+        fetch(`https://rocky-chamber-63741.herokuapp.com/update/${id}`, {
             method: 'PATCH',
             headers: { 'Content-type': 'application/json' },
             body: JSON.stringify({ status: e.target.value })
@@ -19,7 +19,7 @@ const OrderList = ({ userName }) => {
     }
 
     function getData() {
-        fetch('http://localhost:5000/orders')
+        fetch('https://rocky-chamber-63741.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setTableData(data))
     }
