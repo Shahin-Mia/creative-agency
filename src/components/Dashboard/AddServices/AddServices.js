@@ -6,7 +6,7 @@ import './AddServices.css'
 
 const AddServices = ({ userName }) => {
     const { register, handleSubmit } = useForm();
-    const { isAdded, setIsAdded } = useState(false);
+    const [isAdded, setIsAdded] = useState(false);
 
     const handleOnSubmit = data => {
         const files = data.icon;
