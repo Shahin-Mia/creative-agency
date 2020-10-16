@@ -1,0 +1,29 @@
+.addServices-section label {
+    color: #009444;
+    font-size: 16px;
+    background: #DEFFED;
+    width: 271px;
+    height: 60px;
+    border: 1px solid #009444;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.addServices-section .row {
+    background-color: #FFF;
+    padding: 20px 40px;
+    border-radius: 20px;
+}
+
+.addServices-section form {
+    background-color: #F4F7FC;
+    width: 100%;
+}
+
+.addServices-section input[type="file"] {
+    display: none;
+}

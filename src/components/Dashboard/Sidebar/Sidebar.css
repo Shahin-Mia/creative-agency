@@ -1,0 +1,14 @@
+.sidebar li, .navbar-brand {
+    margin-bottom: 2em;
+}
+
+.sidebar li:hover span {
+    display: inline-block;
+    transform: translate(5px);
+}
+
+@media only screen and (min-width: 768px) {
+    .sidebar {
+        position: fixed;
+    }
+}

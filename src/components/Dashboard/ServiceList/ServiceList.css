@@ -1,0 +1,33 @@
+.Pending, .Done, .Ongoing {
+    height: 40px;
+    width: 108px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.Pending {
+    color: #FF4545;
+    background-color: #FFE3E3;
+}
+
+.Done {
+    color: #009444;
+    background-color: #C6FFE0;
+}
+
+.Ongoing {
+    color: rgb(162, 165, 1);
+    background-color: rgb(253, 253, 200);
+}
+
+.card {
+    display: inline-block;
+    margin: 5px;
+}

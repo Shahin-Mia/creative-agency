@@ -1,0 +1,42 @@
+.login-field {
+    width: 570px;
+    height: 457px;
+    background: #FFFFFF;
+    border: 1px solid #ABABAB;
+    border-radius: 4px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.google-btn-container, .login-bg, .login-field {
+    display: flex;
+    align-items: center;
+}
+
+.login-btn {
+    background: none;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 382px;
+    font-weight: 500;
+}
+
+.google-btn-container {
+    margin: 20px 0;
+    width: 457px;
+    height: 51px;
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    border-radius: 57px;
+    padding: 10px;
+    transition: background-color .3s ease;
+}
+
+.login-btn:focus {
+    outline: none;
+}
+
+.google-btn-container:hover {
+    background-color: lightblue;
+}

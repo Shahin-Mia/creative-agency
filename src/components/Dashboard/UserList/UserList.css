@@ -1,0 +1,19 @@
+.control-overflow {
+    height: 60vh;
+    overflow-y: scroll;
+    padding: 0 5px;
+}
+
+.control-overflow {
+    background-color: #fff;
+    padding: 20px 10px;
+}
+
+.control-overflow thead {
+    background-color: #F4F7FC;
+}
+
+#status {
+    outline: none;
+    border: none;
+}

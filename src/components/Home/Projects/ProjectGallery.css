@@ -1,0 +1,23 @@
+.gallery-bg {
+    background: #111430;
+    min-height: 80vh;
+    max-width: 1501px;
+}
+
+.rec.rec-arrow {
+    background: none;
+}
+
+.rec.rec-arrow:disabled {
+    visibility: hidden;
+}
+
+.gallery-title {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 43px;
+    letter-spacing: 0.3959999978542328px;
+    text-align: center;
+    color: white;
+    margin: 100px 0;
+}

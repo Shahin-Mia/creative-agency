@@ -1,0 +1,18 @@
+.footer-bg {
+    background: #FBD062;
+    min-height: 80vh;
+}
+
+.footer-title {
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 43px;
+    letter-spacing: 0.3959999978542328px;
+    text-align: left;
+}
+
+.input-field {
+    width: 630px;
+    height: 70px;
+}
