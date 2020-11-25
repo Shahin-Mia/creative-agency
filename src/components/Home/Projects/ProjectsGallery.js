@@ -18,20 +18,20 @@ const ProjectsGallery = () => {
         <section className="container-fluid gallery-bg d-flex flex-column align-items-center mb-5">
             <h2 className="gallery-title">Here are some of <span className="highlights">our works</span></h2>
             <Carousel itemPadding={[10, 20]} breakPoints={breakPoints} enableAutoPlay autoPlaySpeed={4000}>
-                <div className="item card">
-                    <img src={carousel1} style={{ maxWidth: 468.1, maxHeight: 336.53 }} alt="" />
+                <div className="card">
+                    <img src={carousel1} className="img-fluid" alt="" />
                 </div>
-                <div className="item card" >
-                    <img src={carousel2} style={{ maxWidth: 468.1, maxHeight: 336.53 }} alt="" />
+                <div className="card" >
+                    <img src={carousel2} className="img-fluid" alt="" />
                 </div>
-                <div className="item card" >
-                    <img src={carousel4} style={{ maxWidth: 468.1, maxHeight: 336.53 }} alt="" />
+                <div className="card" >
+                    <img src={carousel4} className="img-fluid" alt="" />
                 </div>
-                <div className="item card" >
-                    <img src={carousel5} style={{ maxWidth: 468.1, maxHeight: 336.53 }} alt="" />
+                <div className="card" >
+                    <img src={carousel5} className="img-fluid" alt="" />
                 </div>
-                <div className="item card" >
-                    <img src={carousel3} style={{ maxWidth: 468.1, maxHeight: 336.53 }} alt="" />
+                <div className="card" >
+                    <img src={carousel3} className="img-fluid" alt="" />
                 </div>
             </Carousel>
         </section>

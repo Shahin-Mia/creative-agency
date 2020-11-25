@@ -15,9 +15,15 @@ const Services = () => {
             <h2 className="custom-h2">Provide awesome <span className="highlights">services</span></h2>
             <div className="row row-cols-1 row-cols-md-3">
                 {
-                    services.length === 0 && <div className="d-flex justify-content-center">
-                        <div className="spinner-border" role="status">
-                            <span className="sr-only">Loading...</span>
+                    services.length === 0 && <div className="loading">
+                        <div class="spinner-grow text-primary" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-secondary" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-grow text-success" role="status">
+                            <span class="sr-only">Loading...</span>
                         </div>
                     </div>
                 }

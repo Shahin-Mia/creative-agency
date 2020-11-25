@@ -9,7 +9,7 @@ const FeedbackCard = ({ review }) => {
     }
     return (
         <div className="col mb-4">
-            <div className="card d-flex flex-column p-4" style={cardStyle}>
+            <div className="card p-4" style={cardStyle}>
                 <div className="d-flex">
                     {review.img ? <img src={review.img} style={{ width: 64, height: 64, borderRadius: '50%' }} className="card-img-top mx-4" alt="..." />
                         : <img src={`data:image/png;base64,${review.image.img}`} style={{ width: 64, height: 64, borderRadius: '50%' }} className="card-img-top mx-4" alt="..." />}
